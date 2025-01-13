@@ -1,4 +1,51 @@
-<form method="POST" action="/compressImage" enctype="multipart/form-data">
-  <input type="file" name="image/*" required />
-  <input type="submit" value="compress image" />
-</form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: beige">
+    <div style="width: 100%">
+      <form
+        method="POST"
+        action="/compressImage"
+        enctype="multipart/form-data"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          gap: 80px;
+        "
+      >
+        <h1>Webp Convert</h1>
+        <input
+          type="file"
+          name="image/*"
+          required
+          style="
+            padding: 10px 20px;
+            background-color: cadetblue;
+            border-radius: 10px;
+            border: 2px solid black;
+            font-size: 20px;
+          "
+        />
+        <input
+          type="submit"
+          value="Chuyển đổi"
+          style="
+            padding: 10px 20px;
+            background-color: coral;
+            border-radius: 10px;
+            border: 2px solid black;
+            font-size: 20px;
+            cursor: pointer;
+          "
+        />
+      </form>
+    </div>
+  </body>
+</html>
